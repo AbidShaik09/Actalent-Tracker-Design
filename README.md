@@ -53,7 +53,80 @@ This tracker application allows managers to create teams, assign roles, define a
    - They access reports or dashboards that show the overall utilization of all teams.
    - They can view utilization data for different time periods (e.g., past week, month, year) to make informed decisions about resource allocation and strategic planning.
 ## DB Design
-  - ![Alt text](https://github.com/AbidShaik09/Actalent-Tracker-Design/blob/main/DB-Design.png)
+  - ![Table activities {
+  id int
+  taskName string
+  createdBy int
+  teamId int
+  utilization bool
+  hoursId int
+  createdOn timestamp 
+}
+
+Table Hours {
+  id int
+  employeeId int
+  hours int 
+}
+
+Table Entry {
+  id int
+  employeeId int
+  activityId int
+  description string
+  date date
+  hours int
+}
+
+Table Team {
+  id int
+  name string
+}
+
+Table TeamMemberRoles {
+  id int
+  roleName string
+  roleDescription string
+}
+
+Table TeamMembers {
+  id int
+  teamId int
+  employeeId int
+  roleId int
+}
+
+Table Employees {
+  id int
+  firstName string
+  lastName string
+  email string
+  phone string
+  hireDate date
+  roleId int
+}
+
+Table EmployeeRoles {
+  id int
+  roleName string
+  roleDescription string
+}
+
+Table EmployeeTeams {
+  id int
+  employeeId int
+  teamId int
+}
+
+Ref: activities.teamId > Team.id  
+Ref: Entry.activityId > activities.id 
+Ref: activities.hoursId > Hours.id   
+Ref: TeamMembers.teamId > Team.id 
+Ref: TeamMembers.roleId > TeamMemberRoles.id
+Ref: Employees.roleId > EmployeeRoles.id
+Ref: EmployeeTeams.employeeId > Employees.id
+Ref: EmployeeTeams.teamId > Team.id
+](https://github.com/AbidShaik09/Actalent-Tracker-Design/blob/main/DB-Design.png)
   - <img src="https://github.com/AbidShaik09/Actalent-Tracker-Design/blob/main/DB-Design.png">
 ## Tech Stack
 - **Client-Side**: React, MUI (Material-UI), TypeScript
