@@ -53,8 +53,8 @@ This tracker application allows managers to create teams, assign roles, define a
    - They access reports or dashboards that show the overall utilization of all teams.
    - They can view utilization data for different time periods (e.g., past week, month, year) to make informed decisions about resource allocation and strategic planning.
 ## DB Design
-  - ![Alt text](./DB-Design.png)
-  - <img src="./DB-Design.png">
+  - ![Alt text](https://github.com/AbidShaik09/Actalent-Tracker-Design/blob/main/DB-Design.png)
+  - <img src="https://github.com/AbidShaik09/Actalent-Tracker-Design/blob/main/DB-Design.png">
 ## Tech Stack
 - **Client-Side**: React, MUI (Material-UI), TypeScript
 - **Server-Side**: .NET 8 Web API Microservices
