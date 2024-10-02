@@ -205,3 +205,50 @@ Ref: EmployeeTeams.teamId > Team.id
   - `GET /reports/utilization`
   - `GET /reports/team/{teamId}/utilization`
   - `GET /reports/employee/{employeeId}/utilization`
+
+# DTOs and Endpoints 
+## User Management Service
+- **POST /users/register**: `UserRegistrationDTO`
+- **POST /users/login**: `UserLoginDTO`
+- **GET /users/{id}**: `UserDTO`
+- **PUT /users/{id}**: `UserDTO`
+- **DELETE /users/{id}**: `UserDTO`
+- **GET /roles**: `RoleDTO[]`
+- **POST /roles**: `RoleDTO`
+- **PUT /roles/{id}**: `RoleDTO`
+- **DELETE /roles/{id}**: `RoleDTO`
+
+## Team Management Service
+- **POST /teams**: `TeamDTO`
+- **GET /teams/{id}**: `TeamDTO`
+- **PUT /teams/{id}**: `TeamDTO`
+- **DELETE /teams/{id}**: `TeamDTO`
+- **POST /teams/{id}/members**: `TeamMemberDTO`
+- **DELETE /teams/{id}/members/{memberId}**: `TeamMemberDTO`
+- **GET /roles**: `TeamRoleDTO[]`
+- **POST /roles**: `TeamRoleDTO`
+- **PUT /roles/{id}**: `TeamRoleDTO`
+- **DELETE /roles/{id}**: `TeamRoleDTO`
+
+## Activity Management Service
+- **POST /activities**: `ActivityDTO`
+- **GET /activities/{id}**: `ActivityDTO`
+- **PUT /activities/{id}**: `ActivityDTO`
+- **DELETE /activities/{id}**: `ActivityDTO`
+- **GET /activities**: `ActivityDTO[]`
+
+## Time Tracking Service
+- **POST /hours**: `HoursDTO`
+- **GET /hours/{id}**: `HoursDTO`
+- **PUT /hours/{id}**: `HoursDTO`
+- **DELETE /hours/{id}**: `HoursDTO`
+- **POST /entries**: `EntryDTO`
+- **GET /entries/{id}**: `EntryDTO`
+- **PUT /entries/{id}**: `EntryDTO`
+- **DELETE /entries/{id}**: `EntryDTO`
+
+## Reporting Service
+- **GET /reports/utilization**: `UtilizationReportDTO[]`
+- **GET /reports/team/{teamId}/utilization**: `TeamUtilizationDTO`
+- **GET /reports/employee/{employeeId}/utilization**: `EmployeeUtilizationDTO`
+
