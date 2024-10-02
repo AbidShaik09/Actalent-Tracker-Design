@@ -134,15 +134,7 @@ Ref: EmployeeTeams.teamId > Team.id
 - **Deployment**: Docker Containers
 - **Security**: JWT
 
-## Milestones and Timelines
-1. **Project Setup**: 2-Oct-24 to 4-Oct-24
-2. **Design Phase**: 5-Oct-24 to 18-Oct-24
-3. **Database Setup**: 19-Oct-24 to 1-Nov-24
-4. **Backend Development**: 2-Nov-24 to 29-Nov-24
-5. **Frontend Development**: 30-Nov-24 to 27-Dec-24
-6. **Testing**: 28-Dec-24 to 10-Jan-25
-7. **CI/CD Setup**: 11-Jan-25 to 17-Jan-25
-8. **Final Deployment**: 18-Jan-25 to 24-Jan-25
+
 
 ## Microservices Architecture
 
